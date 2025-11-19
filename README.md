@@ -112,3 +112,45 @@ This provides:
 - Model descriptions
 - Source documentation
 - Schema browser
+
+---
+
+# 🤖 Machine Learning Use Cases
+
+Because the gold layer is engineered as a feature store, you can apply:
+
+### Supervised Learning
+- Sales forecasting (regression)
+- Customer churn prediction
+- High-value customer prediction
+- Product demand modelling
+
+### Unsupervised Learning
+- Customer segmentation (K-Means / GMM)
+- Market basket clustering
+- Product similarity modelling
+
+### Time-Series
+- ARIMA / Prophet forecasting
+- Trend + seasonality decomposition
+- LSTM / RNN models
+
+### Recommenders
+- Collaborative filtering
+- Content-based filtering
+
+# 🧪 Why This Project Matters
+
+- Full Medallion pipeline engineered manually in pgAdmin + automated in dbt
+- Modular SQL transformations following analytics engineering best practices
+- Gold fact table ready for direct ML use
+- dbt lineage + documentation ensures transparency and scalability
+- Easy to rebuild end-to-end with just 3 commands
+
+# 🚀 Full Rebuild (All Layers)
+```bash
+dbt clean
+dbt seed -t bronze
+dbt run -t silver --select silver
+dbt run -t gold --select gold
+```
