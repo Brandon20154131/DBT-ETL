@@ -75,6 +75,7 @@ dbt run -t silver --select silver
 dbt run -t gold --select gold
 ```
 # 📁 Project Structure
+```
 DBT-Medallion_Pipeline/
 │
 ├── models/
@@ -88,6 +89,8 @@ DBT-Medallion_Pipeline/
 ├── macros/            → optional macros  
 ├── dbt_project.yml
 └── README.md
+```
+---
 
 # 📊 dbt Documentation
 
