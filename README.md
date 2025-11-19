@@ -74,3 +74,41 @@ dbt run -t silver --select silver
 ```bash
 dbt run -t gold --select gold
 ```
+# 📁 Project Structure
+DBT-Medallion_Pipeline/
+│
+├── models/
+│   ├── bronze/        → raw seed sources  
+│   ├── silver/        → cleaned conformed models  
+│   └── gold/          → ML-ready fact table  
+│
+├── seeds/
+│   └── bronze/        → raw CSVs  
+│
+├── macros/            → optional macros  
+├── dbt_project.yml
+└── README.md
+
+# 📊 dbt Documentation
+
+Generate docs:
+```bash
+dbt docs generate
+```
+
+Serve docs locally:
+```bash
+dbt docs serve
+```
+
+This provides:
+
+Interactive DAG
+
+Column-level lineage
+
+Model descriptions
+
+Source documentation
+
+Schema browser
