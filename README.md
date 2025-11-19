@@ -61,4 +61,8 @@ The pipeline loads raw CSVs, performs cleaning + validation, and produces a **fi
 # ⚙️ Pipeline Runbook
 
 This project uses **multiple dbt targets** so each layer builds into its own schema:
+## ✔ 1. Seed the Bronze layer
+
+```bash
+dbt seed -t bronze
 
