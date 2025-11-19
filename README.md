@@ -65,4 +65,12 @@ This project uses **multiple dbt targets** so each layer builds into its own sch
 
 ```bash
 dbt seed -t bronze
-
+```
+## ✔ 2. Build the Silver layer (cleaned views)
+```bash
+dbt run -t silver --select silver
+```
+## ✔ 3. Build the Gold layer (ML fact table)
+```bash
+dbt run -t gold --select gold
+```
