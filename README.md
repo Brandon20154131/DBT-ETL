@@ -88,7 +88,6 @@ DBT-Medallion_Pipeline/
 ├── seeds/
 │   └── bronze/        → raw CSVs  
 │
-├── macros/            → optional macros  
 ├── dbt_project.yml
 └── README.md
 ```
