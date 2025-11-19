@@ -107,13 +107,8 @@ dbt docs serve
 ```
 
 This provides:
-
-Interactive DAG
-
-Column-level lineage
-
-Model descriptions
-
-Source documentation
-
-Schema browser
+- Interactive DAG
+- Column-level lineage
+- Model descriptions
+- Source documentation
+- Schema browser
