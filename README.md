@@ -74,6 +74,8 @@ dbt run -t silver --select silver
 ```bash
 dbt run -t gold --select gold
 ```
+---
+
 # 📁 Project Structure
 ```
 DBT-Medallion_Pipeline/
